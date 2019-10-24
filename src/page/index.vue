@@ -8,7 +8,10 @@
         </div>
         <div class="videoList">
           <div class="pic">
-            <img src="../img/1.png" alt="">
+            <div class="picBox">
+              <img src="../img/1.png" alt="">
+
+            </div>
             <p>文科合集</p>
             <div class="price">
               <span class="num">29人购买</span>
@@ -17,7 +20,10 @@
 
           </div>
           <div class="pic">
-            <img src="../img/1.png" alt="">
+            <div class="picBox">
+              <img src="../img/1.png" alt="">
+
+            </div>
             <p>文科合集</p>
             <div class="price">
               <span class="num">29人购买</span>
@@ -26,7 +32,6 @@
 
           </div>
         </div>
-
       </div>
       <div class="module module2">
         <div class="title">
@@ -36,8 +41,11 @@
         </div>
         <div class="videoList">
           <div class="pic">
-            <img src="../img/1.png" alt="">
-            <p>文科合集</p>
+            <div class="picBox">
+              <img src="../img/1.png" alt="">
+              <span class="gengxin">更新中...</span>
+            </div>
+            <p>语文专转本合集</p>
             <div class="price">
               <span class="num">29人购买</span>
               <span class="money">￥500.00</span>
@@ -45,8 +53,10 @@
 
           </div>
           <div class="pic">
-            <img src="../img/1.png" alt="">
-            <p>文科合集</p>
+            <div class="picBox">
+              <img src="../img/1.png" alt="">
+            </div>
+            <p>英语专转本合集</p>
             <div class="price">
               <span class="num">29人购买</span>
               <span class="money">￥500.00</span>
@@ -64,16 +74,21 @@
         </div>
         <div class="videoList">
           <div class="pic">
-            <img src="../img/1.png" alt="">
+            <div class="picBox">
+              <img src="../img/1.png" alt="">
+              <span class="time">距结束：32天10时18分02秒</span>
+            </div>
             <p>强化冲刺系列 第一章-极限 连续 间断</p>
             <div class="price">
               <span class="zhuli">助力：￥0.00</span>
               <del class="zhuli1">￥500.00</del>
             </div>
-
           </div>
           <div class="pic">
-            <img src="../img/1.png" alt="">
+            <div class="picBox">
+              <img src="../img/1.png" alt="">
+              <span class="time">距结束：32天10时18分02秒</span>
+            </div>
             <p>强化冲刺系列 第一章-极限 连续 间断</p>
             <div class="price">
               <span class="zhuli">助力：￥0.00</span>
@@ -114,27 +129,32 @@
       </div>
       <div class="module module5">
         <div class="title">
-          <h2>社群</h2>
-          <p>学习</p>
+          <h2>测评</h2>
+          <p>评估 剖析 检测</p>
           <span>查看更多</span>
         </div>
         <div class="videoList">
           <div class="pic">
-            <img src="../img/2.png" alt="">
-            <p>大学语文</p>
-          </div>
-          <div class="pic">
-            <img src="../img/2.png" alt="">
-            <p>大学数学</p>
+            <div style="text-align: center">
+              <img src="../img/cepingLogo.png" alt="">
+            </div>
+
+            <p>高等数学入门测试</p>
+            <div class="price">
+              <span class="num">52人已测</span>
+              <span class="money">免费</span>
+            </div>
 
           </div>
           <div class="pic">
-            <img src="../img/2.png" alt="">
-            <p>大学英语</p>
-          </div>
-          <div class="pic">
-            <img src="../img/2.png" alt="">
-            <p>计算机基础</p>
+            <div style="text-align: center">
+              <img src="../img/cepingLogo.png" alt="">
+            </div>
+            <p>高等数学入门测试</p>
+            <div class="price">
+              <span class="num">52人已测</span>
+              <span class="money">免费</span>
+            </div>
 
           </div>
         </div>
@@ -193,6 +213,9 @@
           display: inline-block;
           vertical-align: top;
           margin-bottom: rem(30);
+          .picBox{
+            position: relative;
+          }
           img{
             border-radius: rem(5);
             width: 100%;
@@ -246,16 +269,79 @@
               position: absolute;
               top:rem(60);
               right: rem(20);
-              max-width: rem(100);
+              max-width: rem(120);
               text-align: center;
-
             }
           }
-
         }
 
       }
 
+    }
+    .module2{
+      .videoList{
+        .picBox{
+          position: relative;
+          .gengxin{
+            display: inline-block;
+            height: rem(40);
+            line-height: rem(40);
+            color: #fff;
+            font-size: rem(18);
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            text-align: center;
+            z-index: 10;
+            background: #409eff;
+            width: rem(130);
+          }
+        }
+
+      }
+
+    }
+    .module3{
+      .videoList{
+        .picBox{
+          position: relative;
+          .time{
+            display: inline-block;
+            height: rem(40);
+            line-height: rem(40);
+            color: #fff;
+            font-size: rem(20);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            text-align: center;
+            z-index: 10;
+            background: rgba(0,0,0,0.5);
+            width: 100%;
+          }
+        }
+
+      }
+
+    }
+    .module5{
+      .videoList{
+        .pic{
+          width: 48%;
+          display: inline-block;
+          vertical-align: top;
+          margin-bottom: rem(30);
+          img{
+            border-radius: rem(5);
+            width: 50%;
+            display: inline-block;
+            margin: 0 auto;
+          }
+
+
+        }
+
+      }
     }
   }
 
