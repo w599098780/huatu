@@ -4,13 +4,13 @@
         <div class="title">
           <h2>知识套餐</h2>
           <p>营养套餐</p>
-          <span>更多套餐</span>
+          <router-link to="/pageList?id=1" tag="span">更多套餐</router-link>
+
         </div>
         <div class="videoList">
           <div class="pic">
             <div class="picBox">
               <img src="../img/1.png" alt="">
-
             </div>
             <p>文科合集</p>
             <div class="price">
@@ -37,7 +37,8 @@
         <div class="title">
           <h2>专栏</h2>
           <p>综合 专业 深度</p>
-          <span>查看更多</span>
+
+          <router-link to="/pageList?id=2" tag="span">查看更多</router-link>
         </div>
         <div class="videoList">
           <div class="pic">
@@ -70,7 +71,7 @@
         <div class="title">
           <h2>好友助力</h2>
           <p>好友助力，免费领取</p>
-          <span>更多助力</span>
+          <router-link to="/pageList?id=3" tag="span">更多助力</router-link>
         </div>
         <div class="videoList">
           <div class="pic">
