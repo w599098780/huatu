@@ -10,7 +10,9 @@
     <collection-list v-if="id==1"></collection-list>
     <special-list v-if="id==2"></special-list>
     <friend-list  v-if="id==3"></friend-list>
-    <div class="bottomText">
+    <course-list v-if="id==4"></course-list>
+    <test-list v-if="id==5"></test-list>
+    <div class="bottomText" v-if="id!=4">
       <p>我是有底线的</p>
     </div>
   </div>
@@ -21,9 +23,11 @@
   import collectionList from '../components/collectionList'
   import specialList from '../components/specialList'
   import friendList from '../components/friendList'
+  import courseList from '../components/courseList'
+  import testList from '../components/testList'
     export default {
-        name: "pageList",
-      components:{collectionList,specialList,friendList},
+      name: "pageList",
+      components:{collectionList,specialList,friendList,courseList,testList},
       data(){
           return{
             id:''
@@ -45,6 +49,7 @@
       padding-top: rem(50);
       background: #fff;
       padding-bottom: rem(30);
+      font-size: 0;
       .search{
         display: inline-block;
         position: relative;

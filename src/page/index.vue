@@ -104,7 +104,7 @@
         <div class="title">
           <h2>课程分类</h2>
           <p>精选</p>
-          <span>全部分类</span>
+          <router-link to="/pageList?id=4" tag="span">全部分类</router-link>
         </div>
         <div class="videoList">
           <div class="pic">
@@ -132,7 +132,7 @@
         <div class="title">
           <h2>测评</h2>
           <p>评估 剖析 检测</p>
-          <span>查看更多</span>
+          <router-link to="/pageList?id=5" tag="span">查看更多</router-link>
         </div>
         <div class="videoList">
           <div class="pic">

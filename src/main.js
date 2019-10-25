@@ -6,6 +6,7 @@ import router from './router'
 import 'lib-flexible/flexible'
 
 import '@/css/comStyle.scss'
+import '@/font/iconfont.css'
 import attachFastClick from 'fastclick';
 import { $fetch, $post, $put, $del} from './http'
 
