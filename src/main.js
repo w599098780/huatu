@@ -18,7 +18,11 @@ Vue.prototype.$put = $put
 Vue.prototype.$del = $del
 // fastClick
 attachFastClick.attach(document.body);
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
 
+
+Vue.use(ElementUI);
 
 /* eslint-disable no-new */
 new Vue({
