@@ -1,20 +1,20 @@
 <template>
     <div class="paper">
-      <div class="top">
+      <div class="top" v-if="type!=1">
         <div class="module1">1/45</div>
         <div class="module2">00:00:13</div>
         <router-link to="/report" class="module3" tag="div"><span>交卷</span></router-link >
       </div>
      <!-- 单选-->
-      <single></single>
+      <single :type="type"></single>
       <!-- 多选-->
-      <multiple></multiple>
+      <multiple  :type="type"></multiple>
       <!--判断-->
-      <judge></judge>
+      <judge  :type="type"></judge>
       <!--填空-->
-      <fill-bank></fill-bank>
+      <fill-bank :type="type"></fill-bank>
      <!--简答-->
-      <short-answer></short-answer>
+      <short-answer :type="type"></short-answer>
 
     </div>
 </template>
@@ -30,8 +30,14 @@
         name: '',
         components: {single,multiple,judge,fillBank,shortAnswer},
         data() {
-            return {}
+            return {
+              type:''
+            }
         },
+      created(){
+          this.type=this.$route.query.type
+
+      },
         methods: {}
     }
 </script>
@@ -91,6 +97,7 @@
         font-size: rem(28);
       }
       .options{
+        padding-bottom: rem(20);
         .optionItem{
           margin-left: rem(20);
           margin-top: rem(60);
@@ -124,8 +131,36 @@
         }
 
       }
-      &.judge{
+      .res{
+       padding: rem(60) rem(20);
 
+        @include border-top-1px(#E4E7ED);
+        span{
+          font-size: rem(35);
+          margin:0 rem(10);
+          display: inline-block;
+          .wrong{
+            color: #F56C6C;
+          }
+          .right{
+            color: #67C23A;
+          }
+          span{
+
+            display: inline-block;
+            margin:0 rem(10);
+          }
+        }
+        h3{
+          font-size: rem(35);
+          margin-top: rem(40);
+          padding-left: rem(10);
+        }
+        p{
+          font-size: rem(28);
+          line-height: rem(40);
+          padding: rem(20);
+        }
       }
     }
 

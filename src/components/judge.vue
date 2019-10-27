@@ -14,6 +14,12 @@
         <p>active</p>
       </div>
     </div>
+    <div class="res" v-if="type==1">
+      <span>参考答案：<span class="m30">B</span></span>
+      <span>你的答案：<span class="wrong">A</span><span class="right">B</span></span>
+      <h3>解析：</h3>
+      <p>无</p>
+    </div>
   </div>
 </template>
 
@@ -22,10 +28,14 @@
 
     export default {
         name: '',
+        props:['type'],
         components: {},
         data() {
             return {}
         },
+      created(){
+
+      },
         methods: {}
     }
 </script>

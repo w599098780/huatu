@@ -20,6 +20,13 @@
       "unicode_decimal": 58897
     },
     {
+      "icon_id": "1667266",
+      "name": "错误",
+      "font_class": "cuowu",
+      "unicode": "e623",
+      "unicode_decimal": 58915
+    },
+    {
       "icon_id": "3521812",
       "name": "课程",
       "font_class": "kecheng",
@@ -60,6 +67,13 @@
       "font_class": "dibudaohanglan-",
       "unicode": "e62d",
       "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "9402940",
+      "name": "对",
+      "font_class": "changyongicon-",
+      "unicode": "e613",
+      "unicode_decimal": 58899
     },
     {
       "icon_id": "11372739",
