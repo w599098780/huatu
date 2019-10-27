@@ -63,11 +63,15 @@
     export default {
         name: '',
         components: {},
+        props:['type'],
         data() {
             return {
               active:1
             }
         },
+      created(){
+        this.type?this.active= this.type:this.active= 1
+      },
         methods: {
           menuFun(val){
             this.active=val

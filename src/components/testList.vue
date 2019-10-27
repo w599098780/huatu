@@ -1,6 +1,6 @@
 <template>
     <div class="testList">
-      <div class="list">
+      <router-link class="list" to="/test" tag="div">
         <div class="left">
           <img src="../img/cepingLogo.png" alt="">
         </div>
@@ -12,8 +12,8 @@
           <p>试卷0套 <span>|</span> 已测24</p>
         </div>
 
-      </div>
-      <div class="list">
+      </router-link>
+      <router-link class="list" to="/test" tag="div">
         <div class="left">
           <img src="../img/cepingLogo.png" alt="">
         </div>
@@ -25,8 +25,8 @@
           <p>试卷0套 <span>|</span> 已测24</p>
         </div>
 
-      </div>
-      <div class="list">
+      </router-link>
+      <router-link class="list" to="/test" tag="div">
         <div class="left">
           <img src="../img/cepingLogo.png" alt="">
         </div>
@@ -38,7 +38,7 @@
           <p>试卷0套 <span>|</span> 已测24</p>
         </div>
 
-      </div>
+  </router-link>
     </div>
 </template>
 

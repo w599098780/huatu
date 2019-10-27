@@ -119,7 +119,7 @@
       components: {},
       data() {
         return {
-          active: 3,
+          active: 1,
           data: [{
             label: '一级 1',
             children: [{

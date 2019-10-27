@@ -10,7 +10,7 @@
     <collection-list v-if="id==1"></collection-list>
     <special-list v-if="id==2"></special-list>
     <friend-list  v-if="id==3"></friend-list>
-    <course-list v-if="id==4"></course-list>
+    <course-list v-if="id==4" :type="type"></course-list>
     <test-list v-if="id==5"></test-list>
     <div class="bottomText" v-if="id!=4">
       <p>我是有底线的</p>
@@ -30,11 +30,13 @@
       components:{collectionList,specialList,friendList,courseList,testList},
       data(){
           return{
-            id:''
+            id:'',
+            type:1
           }
        },
        created(){
         this.id= this.$route.query.id
+         this.type= this.$route.query.type
 
       }
     }

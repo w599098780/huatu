@@ -8,7 +8,7 @@
 
         </div>
         <div class="videoList">
-          <div class="pic">
+          <router-link class="pic" to="/details" tag="div">
             <div class="picBox">
               <img src="../img/1.png" alt="">
             </div>
@@ -18,8 +18,8 @@
               <span class="money">￥500.00</span>
             </div>
 
-          </div>
-          <div class="pic">
+          </router-link>
+          <router-link class="pic" to="/details" tag="div">
             <div class="picBox">
               <img src="../img/1.png" alt="">
 
@@ -30,7 +30,7 @@
               <span class="money">￥500.00</span>
             </div>
 
-          </div>
+          </router-link>
         </div>
       </div>
       <div class="module module2">
@@ -41,7 +41,7 @@
           <router-link to="/pageList?id=2" tag="span">查看更多</router-link>
         </div>
         <div class="videoList">
-          <div class="pic">
+          <router-link class="pic" to="/details" tag="div">
             <div class="picBox">
               <img src="../img/1.png" alt="">
               <span class="gengxin">更新中...</span>
@@ -52,10 +52,11 @@
               <span class="money">￥500.00</span>
             </div>
 
-          </div>
-          <div class="pic">
+          </router-link>
+          <router-link class="pic" to="/details" tag="div">
             <div class="picBox">
               <img src="../img/1.png" alt="">
+              <span class="gengxin">更新中...</span>
             </div>
             <p>英语专转本合集</p>
             <div class="price">
@@ -63,7 +64,7 @@
               <span class="money">￥500.00</span>
             </div>
 
-          </div>
+          </router-link>
         </div>
 
       </div>
@@ -74,18 +75,7 @@
           <router-link to="/pageList?id=3" tag="span">更多助力</router-link>
         </div>
         <div class="videoList">
-          <div class="pic">
-            <div class="picBox">
-              <img src="../img/1.png" alt="">
-              <span class="time">距结束：32天10时18分02秒</span>
-            </div>
-            <p>强化冲刺系列 第一章-极限 连续 间断</p>
-            <div class="price">
-              <span class="zhuli">助力：￥0.00</span>
-              <del class="zhuli1">￥500.00</del>
-            </div>
-          </div>
-          <div class="pic">
+          <router-link class="pic" to="/details" tag="div">
             <div class="picBox">
               <img src="../img/1.png" alt="">
               <span class="time">距结束：32天10时18分02秒</span>
@@ -96,7 +86,19 @@
               <del class="zhuli1">￥500.00</del>
             </div>
 
-          </div>
+          </router-link>
+          <router-link class="pic" to="/details" tag="div">
+            <div class="picBox">
+              <img src="../img/1.png" alt="">
+              <span class="time">距结束：32天10时18分02秒</span>
+            </div>
+            <p>强化冲刺系列 第一章-极限 连续 间断</p>
+            <div class="price">
+              <span class="zhuli">助力：￥0.00</span>
+              <del class="zhuli1">￥500.00</del>
+            </div>
+
+          </router-link>
         </div>
 
       </div>
@@ -107,24 +109,22 @@
           <router-link to="/pageList?id=4" tag="span">全部分类</router-link>
         </div>
         <div class="videoList">
-          <div class="pic">
+          <router-link  class="pic"  to="/pageList?id=4&type=2" tag="div">
             <img src="../img/2.png" alt="">
             <p>大学语文</p>
-          </div>
-          <div class="pic">
+          </router-link>
+          <router-link  class="pic"  to="/pageList?id=4&type=3" tag="div">
             <img src="../img/2.png" alt="">
             <p>大学数学</p>
-
-          </div>
-          <div class="pic">
+          </router-link>
+          <router-link  class="pic"  to="/pageList?id=4&type=4" tag="div">
             <img src="../img/2.png" alt="">
             <p>大学英语</p>
-          </div>
-          <div class="pic">
+          </router-link>
+          <router-link  class="pic"  to="/pageList?id=4&type=5" tag="div">
             <img src="../img/2.png" alt="">
             <p>计算机基础</p>
-
-          </div>
+          </router-link>
         </div>
 
       </div>
@@ -135,7 +135,7 @@
           <router-link to="/pageList?id=5" tag="span">查看更多</router-link>
         </div>
         <div class="videoList">
-          <div class="pic">
+          <router-link class="pic" to="/test" tag="div">
             <div style="text-align: center">
               <img src="../img/cepingLogo.png" alt="">
             </div>
@@ -146,18 +146,19 @@
               <span class="money">免费</span>
             </div>
 
-          </div>
-          <div class="pic">
+          </router-link>
+          <router-link class="pic" to="/test" tag="div">
             <div style="text-align: center">
               <img src="../img/cepingLogo.png" alt="">
             </div>
+
             <p>高等数学入门测试</p>
             <div class="price">
               <span class="num">52人已测</span>
               <span class="money">免费</span>
             </div>
 
-          </div>
+          </router-link>
         </div>
 
       </div>
