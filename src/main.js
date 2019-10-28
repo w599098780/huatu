@@ -6,6 +6,7 @@ import router from './router'
 import 'lib-flexible/flexible'
 
 import '@/css/comStyle.scss'
+import '@/font/iconfont.css'
 import attachFastClick from 'fastclick';
 import { $fetch, $post, $put, $del} from './http'
 
@@ -17,7 +18,11 @@ Vue.prototype.$put = $put
 Vue.prototype.$del = $del
 // fastClick
 attachFastClick.attach(document.body);
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
 
+
+Vue.use(ElementUI);
 
 /* eslint-disable no-new */
 new Vue({
