@@ -104,7 +104,7 @@
         <div class="title">
           <h2>课程分类</h2>
           <p>精选</p>
-          <span>全部分类</span>
+          <router-link to="/pageList?id=4" tag="span">全部分类</router-link>
         </div>
         <div class="videoList">
           <div class="pic">

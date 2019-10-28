@@ -10,6 +10,7 @@
     <collection-list v-if="id==1"></collection-list>
     <special-list v-if="id==2"></special-list>
     <friend-list  v-if="id==3"></friend-list>
+
     <div class="bottomText">
       <p>我是有底线的</p>
     </div>
@@ -21,6 +22,7 @@
   import collectionList from '../components/collectionList'
   import specialList from '../components/specialList'
   import friendList from '../components/friendList'
+
     export default {
         name: "pageList",
       components:{collectionList,specialList,friendList},
@@ -42,7 +44,7 @@
     background: #f5f7fa;
     .searchWrap{
       text-align: center;
-      padding-top: rem(50);
+      padding-top: rem(20);
       background: #fff;
       padding-bottom: rem(30);
       .search{
@@ -50,6 +52,8 @@
         position: relative;
         width: 80%;
         margin: 0 auto;
+        height: rem(60);
+        font-size: 0;
       }
     }
     input{
